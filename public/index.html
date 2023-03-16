@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Lover</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body class="bg-lime-50 font-serif">
+    <div class="grid md:grid-cols-3">
+      <!-- wrapper -->
+      <div class="md:col-span-1 md:flex md:justify-end ">
+        <!-- menu area -->
+        <nav class="text-center sm:text-right">
+          <div class="flex justify-between items-center">
+            <h1
+              class="text-gray-900  text-3xl font-bold uppercase p-4 md:border-b-4 border-red-200 border-dotted hover:text-blue-600"
+            >
+              <a href="/">Food Lover</a>
+            </h1>
+            <div id="navicon" class="px-4 cursor-pointer md:hidden ">
+
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+              </svg>
+              
+            </div>
+          </div>
+          <ul id="sitenav" class="text-gray-900 mt-2 hidden md:block ">
+            <li class="m-2 hover:text-red-500">
+              <a href="#" >
+                <span></span>
+                  <svg
+                    class="w-6 h-6 inline-block ml-4"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819"
+                    ></path>
+                  </svg>
+                  Home
+                </span>
+              </a>
+            </li>
+            <li class="m-2 hover:text-red-500">
+              <a href="#">
+                <span><svg                     class="w-6 h-6 inline-block ml-4"
+                  fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 9l6-6m0 0l6 6m-6-6v12a6 6 0 01-12 0v-3"></path>
+                </svg>About</span>
+              </a>
+            </li>
+            <li class="m-2 hover:text-red-500">
+              <a href="#">
+                <span><svg class="w-6 h-6 inline-block ml-4" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"></path>
+                </svg>Contact</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- menu area end -->
+
+      <main class="bg-blue-50 py-8 px-16 md:col-span-2">
+        <div class="flex items-center sm:justify-center md:justify-end  ">
+          <a href="#" class="text-primary btn md:border-2 border-primary hover:bg-primary hover:text-white"
+            >Log in</a
+          >
+          <a
+            href="#"
+            class="text-secondery-200 ml-4 btn md:border-2 border-secondery-200 hover:bg-secondery-100 hover:text-white"
+            >Sign up</a
+          >
+        </div>
+
+        <header>
+          <h2
+            class="text-gray-900 sm:text-yellow-400 md:text-red-600 lg:text-blue-600 text-4xl font-semibold"
+          >
+            Recipes
+          </h2>
+          <h3 class="text-gray-900 text-2xl font-semibold">For Food Lover</h3>
+        </header>
+
+        <div>
+          <!-- cards wrapper -->
+          <h4 class="text-red-600 mt-4 pb-2 border-b-2 border-red-500">
+            Latest Recipes
+          </h4>
+
+          <div
+            class="m-8 p-4  grid gap-8 md:grid-cols-2 lg:grid-cols-3"
+          >
+            <!-- single card goes here -->
+            <div class="card hover:shadow-xl transform hover:scale-110 transition-all ease-in-out duration-300 ">
+              <img src="image/food1.jpg" alt="" class="w-full h-auto" />
+              <div class="font-serif m-4">
+                <span>Lorem ipsum dolor sit</span>
+                <span class="block text-green-900"
+                  >Recipe by Zahurul islam</span
+                >
+              </div>
+              <div class="badge">
+                <span
+                  ><svg
+                    class="h-5 w-3 inline-block"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                  15 minutes
+                </span>
+              </div>
+            </div>
+
+            <div class="card hover:shadow-xl transform hover:scale-110 transition-all ease-in-out duration-300">
+              <img src="image/food2.jpg" alt="" class="w-full" />
+              <div class="font-serif m-4">
+                <span>Lorem ipsum dolor sit</span>
+                <span class="block text-green-900"
+                  >Recipe by Zahurul islam</span
+                >
+              </div>
+              <div class="badge">
+                <span
+                  ><svg
+                    class="h-5 w-3 inline-block"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                  20 minutes
+                </span>
+              </div>
+            </div>
+            <div class="card hover:shadow-xl transform hover:scale-110 transition-all ease-in-out duration-300">
+              <img src="image/food3.jpg" alt="" class="w-full" />
+              <div class="font-serif m-4">
+                <span>Lorem ipsum dolor sit</span>
+                <span class="block text-green-900"
+                  >Recipe by Zahurul islam</span
+                >
+              </div>
+              <div class="badge">
+                <span
+                  ><svg
+                    class="h-5 w-3 inline-block"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                  25 minutes
+                </span>
+              </div>
+            </div>
+          </div>
+          <!-- single card ends here -->
+          <div
+          class="m-8 p-4  grid gap-8 md:grid-cols-2 lg:grid-cols-3"
+        >
+          <!-- single card goes here -->
+          <div class="card hover:shadow-xl transform hover:scale-110 transition-all ease-in-out duration-300 ">
+            <img src="image/food1.jpg" alt="" class="w-full h-auto" />
+            <div class="font-serif m-4">
+              <span>Lorem ipsum dolor sit</span>
+              <span class="block text-green-900"
+                >Recipe by Zahurul islam</span
+              >
+            </div>
+            <div class="badge">
+              <span
+                ><svg
+                  class="h-5 w-3 inline-block"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+                15 minutes
+              </span>
+            </div>
+          </div>
+
+          <div class="card hover:shadow-xl transform hover:scale-110 transition-all ease-in-out duration-300">
+            <img src="image/food2.jpg" alt="" class="w-full" />
+            <div class="font-serif m-4">
+              <span>Lorem ipsum dolor sit</span>
+              <span class="block text-green-900"
+                >Recipe by Zahurul islam</span
+              >
+            </div>
+            <div class="badge">
+              <span
+                ><svg
+                  class="h-4 w-3 inline-block"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+                20 minutes
+              </span>
+            </div>
+          </div>
+          <div class="card hover:shadow-xl transform hover:scale-110 transition-all ease-in-out duration-300">
+            <img src="image/food3.jpg" alt="" class="w-full" />
+            <div class="font-serif m-4">
+              <span>Lorem ipsum dolor sit</span>
+              <span class="block text-green-900"
+                >Recipe by Zahurul islam</span
+              >
+            </div>
+            <div class="badge">
+              <span
+                ><svg
+                  class="h-4 w-3 inline-block"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+                25 minutes
+              </span>
+            </div>
+          </div>
+        </div>
+
+
+          <h4 class="text-gray-900 text-xl mt-4 pb-3 border-b-2 border-red-500">
+            Popular Recipes
+          </h4>
+
+          <div class="m-4">
+            <div
+            class="m-8 p-2  grid gap-8 md:grid-cols-2 lg:grid-cols-3"
+          >
+            <!-- single card goes here -->
+            <div class="card hover:shadow-xl transform hover:scale-110 transition-all ease-in-out duration-300 ">
+              <img src="image/food1.jpg" alt="" class="w-full h-auto" />
+              <div class="font-serif m-4">
+                <span>Lorem ipsum dolor sit</span>
+                <span class="block text-green-900"
+                  >Recipe by Zahurul islam</span
+                >
+              </div>
+              <div class="badge">
+                <span
+                  ><svg
+                    class="h-4 w-3 inline-block"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                  15 minutes
+                </span>
+              </div>
+            </div>
+
+            <div class="card hover:shadow-xl transform hover:scale-110 transition-all ease-in-out duration-300">
+              <img src="image/food2.jpg" alt="" class="w-full" />
+              <div class="font-serif m-4">
+                <span>Lorem ipsum dolor sit</span>
+                <span class="block text-green-900"
+                  >Recipe by Zahurul islam</span
+                >
+              </div>
+              <div class="badge">
+                <span
+                  ><svg
+                    class="h-4 w-3 inline-block"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                  20 minutes
+                </span>
+              </div>
+            </div>
+            <div class="card hover:shadow-xl transform hover:scale-110 transition-all ease-in-out duration-300">
+              <img src="image/food3.jpg" alt="" class="w-full" />
+              <div class="font-serif m-4">
+                <span>Lorem ipsum dolor sit</span>
+                <span class="block text-green-900"
+                  >Recipe by Zahurul islam</span
+                >
+              </div>
+              <div class="badge">
+                <span
+                  ><svg
+                    class="h-3 w-3 inline-block"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                  25 minutes
+                </span>
+              </div>
+            </div>
+          </div>
+
+            <!-- single card ends here -->
+          </div>
+        </div>
+        <!--end card wrapper -->
+
+        <div class="flex items-center justify-center">
+          <div class="btn bg-blue-600 text-white transform hover:scale-110 ease-in-out duration-300">Load more</div>
+        </div>
+      </main>
+    </div>
+    <!-- end wrapper -->
+
+    <script src="../public/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat:ital,wght@0,400;0,500;1,400&family=Satisfy&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply px-2 py-2 rounded-full text-xs uppercase;
+  }
+  .card {
+    @apply bg-white rounded-md shadow-md overflow-hidden relative;
+  }
+  .badge {
+    @apply bg-secondery-100 font-serif text-white uppercase text-xs px-4 rounded-full absolute top-0 mt-1 ml-1;
+  }
+}
